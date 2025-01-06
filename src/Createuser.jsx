@@ -11,7 +11,7 @@ const Createuser = () => {
   const submit = (e) => {
       e.preventDefault(); //stop the default rendering
       console.log({name,email,address})
-      axios.post('https://backend-kv0h.onrender.com/api/user/create', {name,email,address})
+      axios.post('https://mern-backend-gk61.onrender.com/api/user/create', {name,email,address})
       .then(res =>{
         console.log(res.data)
         navigate('/');
